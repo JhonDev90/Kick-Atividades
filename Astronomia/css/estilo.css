@@ -1,0 +1,140 @@
+body {
+  background-image: url(../img/bg-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  width: 100%;
+}
+
+#header {
+  padding: 30px;
+  text-align: center;
+  background-color: #023e8a;
+  color: rgb(242, 229, 229);
+}
+
+#header h1 {
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(242, 229, 229);
+}
+
+#main {
+  margin: auto;
+  font-size: 20px;
+  width: 50%;
+  text-align: justify;
+  background-color: #023e8a;
+}
+
+#nav {
+  font-size: 19px;
+  height: 50px;
+}
+
+#nav ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+#nav li {
+  border: solid rgba(0, 0, 0, 0.597);
+  border-radius: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: rgb(242, 229, 229);
+}
+
+#nav li:hover {
+  background-color: rgb(195, 174, 174);
+  background-size: cover;
+}
+
+#nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#content {
+  display: flex;
+  color: rgb(242, 229, 229);
+  background-color:#023e8a;
+}
+
+.box {
+  padding: 10px;
+  display: block;
+}
+
+.box h2 {
+  border-bottom: 3px solid rgba(242, 229, 229);
+}
+
+
+#footer {
+  color: rgb(242, 229, 229);
+  text-align: center;
+  padding: 10px;
+  border-top: 3px solid rgba(242, 229, 229);
+}
+
+@media screen and (max-width: 1440px) {
+  #main {
+    width: 80%;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+    background-image: none;
+  }
+  #main {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-size: 14px;
+  }
+  #content {
+    flex-direction:column;
+  }
+}
+
+#first_text {
+  border-right: 3px solid rgba(242, 229, 229);
+  padding: 10px;
+  text-align: left;
+}
+
+#second_text {
+  text-align: right;
+  margin-right: 1px;
+}
+
+#container-1{
+ margin-top:-8px;
+ text-align: right;
+}
+
+#container-2 {
+  margin-top: 47px;
+  text-align: right;
+  
+}
+
+#border {
+ border-left: 3px solid rgba(242, 229, 229);
+ padding: 9px;
+ text-align: left;
+}
+
+box h1 {
+  color: green;
+}
