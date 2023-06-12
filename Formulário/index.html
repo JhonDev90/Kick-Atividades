@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Cadastro</h1>
+    <form id="form" onsubmit="return validacao()" method="post">
+      <label id="nme" for="nome">Nome:</label>
+      <input type="text" id="nome" placeholder="Digite o seu primeiro nome" required>
+
+      <label for="sobrenome">Sobrenome:</label>
+      <input type="text" id="sobrenome" placeholder="Digite o seu sobrenome" required>
+
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" placeholder="Digite a sua idade" required>
+
+      <label for="nascimento">Data de nascimento:</label>
+      <input type="date" id="nascimento" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Digite o seu email" required>
+
+      <label for="linguagem">Escolha a linguagem que deseja aprender:</label>
+      <select id="linguagem" required>
+        <option value=""></option>
+        <option value="Javascript">Javascript</option>
+        <option value="Java">Java</option>
+        <option value="Python">Python</option>
+        <option value="C">C</option>
+        <option value="C++">C++</option>
+        <option value="C#">C#</option>
+      </select>
+
+      <label for="opcao">Nível de aprendizado desejado:</label>
+      <input type="radio" name="opcao" value="opcao1" id="opc1">
+      <label for="opcao1">Básico</label>
+
+      <input type="radio" name="opcao" value="opcao2" id="opc">
+      <label for="opcao2">Intermediário</label>
+
+      <input type="radio" name="opcao" value="opcao3" id="opc">
+      <label for="opcao3">Avançado</label>
+
+      <label id="senha" id="senha" for="senha">Crie a sua senha:</label>
+      <input type="password" placeholder="Crie a sua senha" required>
+
+      <label for="senhaConfirm">Digite a sua senha criada:</label>
+      <input type="password" id="senhaConfirm" placeholder="Digite a sua senha criada" required>
+
+      <label for="concordo">Concordo com os <a href="#">Termos</a></label>
+      <input type="radio" id="concordo" required>
+
+      <input type="submit" value="Confirmar" id="btn">
+    </form>
+  </div>
+  <script>
+    function validacao() {
+      var termos = document.getElementById("concordo").checked;
+      if (!termos) {
+        alert("Você deve concordar com os termos antes de enviar o formulário.");
+        return false;
+      }
+
+      var idade = document.getElementById("idade").value;
+      if (idade < 18) {
+        alert("Você ainda não tem idade suficiente para fazer o curso, pois envolve transações e outras atividades restritas.");
+        return false;
+      }
+
+      var senha = document.getElementById("senha").value;
+      var senhaConfirm = document.getElementById("senhaConfirm").value;
+      if (senha.length < 9) {
+        alert("A senha deve ter pelo menos 9 caracteres");
+        return false;
+      }
+
+      var nome = document.getElementById("nome").value;
+      var sobrenome = document.getElementById("sobrenome").value;
+      var nascimento = document.getElementById("nascimento").value;
+      var email = document.getElementById("email").value;
+      var linguagem = document.getElementById("linguagem").value;
+      var nivel = document.querySelector('input[name="opcao"]:checked');
+      if (nome === "" || sobrenome === "" || idade === "" || nascimento === "" || email === "" || linguagem === "" || nivel === null || senha === "" || senhaConfirm === "") {
+        alert("Por favor, preencha todos os campos.");
+        return false;
+      } else if (senha !== senhaConfirm) {
+        alert("As senhas não coincidem. Por favor, digite novamente.");
+        return false;
+      } else {
+        alert("Formulário enviado com sucesso!");
+        document.getElementById("form").reset();
+      }
+
+      window.location.reload(false);
+    }
+  </script>
+
+</body>
+
+</html>
