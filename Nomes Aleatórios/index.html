@@ -4,43 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-      body{
-        background-color: rgb(111, 105, 105);
-      }
-      #nomes {
-        text-align: center;
-        margin-right: 40px;
-        font-size: 43px;
-      }
-      .nomes{
-        margin-left: 45%;
-        margin-top: 20%;
-        height: 60px;
-        border-radius: 20px;
-        font-size: 20px;
-        cursor: pointer;
-        background-color: whitesmoke;
-      }
-      .nomes:hover{
-        background-color: rgb(124, 124, 209);
-        transition: 1s;
-      }
-
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css/style.css">
+  <title>Random Names</title>
 </head>
 <body>
    <button class="nomes" onclick="nomes()">Clique aqui</button>
    <p id="nomes"></p>
-  
-  <script>
-    function nomes() {
-      var nomes = ["Daniela", "Carlos", "Pedro", "João", "Leandra", "Lorenzo", "Levi", "Alice", "Samuel", "Lara"];
-      var indiceAleatorio = Math.floor(Math.random() * nomes.length);
-      document.getElementById("nomes").innerHTML = nomes[indiceAleatorio];
-      return nomes[indiceAleatorio];
-    }
-  </script>
+ <script src="script.js/script.js"></script>
 </body>
 </html>

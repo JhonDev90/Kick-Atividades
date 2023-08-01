@@ -1,0 +1,21 @@
+body{
+  background-color: rgb(111, 105, 105);
+}
+#nomes {
+  text-align: center;
+  margin-right: 40px;
+  font-size: 43px;
+}
+.nomes{
+  margin-left: 45%;
+  margin-top: 20%;
+  height: 60px;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+.nomes:hover{
+  background-color: rgb(124, 124, 209);
+  transition: 1s;
+}
