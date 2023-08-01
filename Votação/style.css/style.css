@@ -1,0 +1,18 @@
+#container {
+  background: aquamarine;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  margin-left: 40%;
+  margin-top: 200px;
+  border-radius: 10px;
+}
+#p {
+ position: relative;
+ top: 50px;
+ color:green;
+ font-size: 20px;
+}
+body {
+ background-color: black;
+}
