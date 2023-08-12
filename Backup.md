@@ -4,4 +4,4 @@ Backup: https://drive.google.com/drive/folders/1gXjIzGTW3OEKV_RnB6BrWkq28KSQsj3P
 
 link do portfólio: https://joaovitor-sousa.soukick.com.br/home/
 
-![Portifólio](https://github.com/JhonDev90/Kick-Atividades/assets/118639436/0ac1c830-aa71-46ad-84e2-1753e8c3f250)
+![Portifólio](https://github.com/JhonDev90/Kick-Atividades/assets/118639436/da31d074-c2d4-4f34-b5ef-ac996f5f7910)
